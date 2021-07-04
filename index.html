@@ -27,7 +27,7 @@
      </div>
      <div class='flex items-center w-1/3'>
       <div>
-        <canvas id="myChart"></canvas>
+        <canvas id="myChart" width="500" height="500"></canvas>
       </div>
      </div>
     </div>
@@ -37,28 +37,22 @@
 
 
    <script>
-    function getRandomArbitrary() {
-      return Math.random() * (255 - 0) + 0;
-    }
-    function randColor(){
-      return 'rgb(' + getRandomArbitrary() + ', ' + getRandomArbitrary() + ',' + getRandomArbitrary() + ')'
-    }
     var labels = [
-      'January',
+      'ドーンブリンガー',
       'February',
       'March',
       'April',
       'May',
       'June',
     ];
-    var list = [randColor(), randColor(), randColor(), randColor(), randColor(), randColor()]
+    var list = ["#F02", "#0F0", "#00F", "#500", "#050", "#005"]
     var data = {
       labels: labels,
       datasets: [{
         label: 'My First dataset',
         backgroundColor: list,
         borderColor: list,
-        data: [0, 10, 5, 2, 20, 30, 45],
+        data: [20, 10, 5, 2, 20, 30, 45],
       }]
     };
     var config = {
