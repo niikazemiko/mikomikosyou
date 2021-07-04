@@ -1,0 +1,8 @@
+{
+  "editor.tabSize": 2,
+  "workbench.tree.indent": 2,
+  "editor.suggestSelection": "first",
+  "editor.quickSuggestions": {
+    "strings": true
+  }
+}
